@@ -1,9 +1,7 @@
+require_relative "../config/environment"
+
 #prompt user for input / main menu
-
-require_relative "config/environment"
-
-
-def welcome_message
+def welcome_to_game
     puts "Welcome to the battle for Colorado!!!"
 end
 
@@ -17,16 +15,12 @@ def new_character_creation
     playerCharacter = Fighter.create(name: playerName, hp: 18, attack: 5, defense: 9) 
 end
 
-
 def restart_message
     puts 'OH YOU WOULD LIKE TO TRY YOUR LUCK AGAIN HUH??'
 end
 
-
-welcome_message
-
-#Fighter.new_player
-new_character_creation
-
-restart_message
+# welcome_to_game
+# new_character_creation
+# binding.pry
+# restart_message
 

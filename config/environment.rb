@@ -1,5 +1,7 @@
 require 'bundler/setup'
 Bundler.require()
 
-require_all 'lib'
+#silence AR logger
+ActiveRecord::Base.logger = nil 
 
+require_all 'lib'
