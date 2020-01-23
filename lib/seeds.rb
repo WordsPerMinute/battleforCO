@@ -9,7 +9,8 @@ enemyKillerKyle = Fighter.create(name: "Killer Kyle", hp: 50, attack: 11, defens
 
 movePunch = Move.create(name: "punch", base_damage: 4, minimum_to_hit: 5, when_to_critical: 12, when_to_damage_self: 2)
 
-killerKyle = FighterMove.create(fighter: enemyKillerKyle, move: movePunch)
+enemyKillerKyle_join1 = FighterMove.create(fighter: enemyKillerKyle, move: movePunch)
+# enemyKillerKyle_join2 = FighterMove.create(fighter: enemyKillerKyle, move: moveStab)
 
 
 # facebook = SocialMedia.create(name: "Facebook")

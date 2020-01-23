@@ -1,9 +1,16 @@
 require_relative "config/environment"
 
-#we'll call our methods here
+# binding.pry
+#  welcome_to_game
+#  new_character_creation
+#  run_story
+#  battle
+#  run_story
+# battle
+# run_story
 
-welcome_to_game
-new_character_creation
-binding.pry
-restart_message
 
+#optional methods for later
+#restart_prompt
+
+# binding.pry
