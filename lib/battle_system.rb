@@ -1,5 +1,6 @@
 require_relative "../config/environment"
 
+<<<<<<< HEAD
 def player_dice_second_roll
     diceArray = dice_rolling
     puts "\nYou rolled a #{diceArray[0].to_s} on your first die!"
@@ -53,4 +54,10 @@ end
 
 dice_rolling
 binding.pry
+=======
+def dice_roller
+    puts %q{Type "r" to roll your dice}
+end
+
+>>>>>>> master
 # methods regarding battling here, including rolling dice
