@@ -4,6 +4,8 @@ require_relative "config/environment"
 
 welcome_to_game
 new_character_creation
-binding.pry
+#binding.pry
 restart_message
+damage_dealer
 
+#dice_roller

@@ -5,7 +5,7 @@ Fighter.destroy_all
 Move.destroy_all
 
 
-enemyKillerKyle = Fighter.create(name: "Killer Kyle", hp: 50, attack: 11, defense: 20)
+enemyKillerKyle = Fighter.create(name: "Killer Kyle", hp: 50, attack: 11, defense: 7)
 
 movePunch = Move.create(name: "punch", base_damage: 4, minimum_to_hit: 5, when_to_critical: 12, when_to_damage_self: 2)
 
