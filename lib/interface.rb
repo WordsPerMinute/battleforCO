@@ -40,7 +40,16 @@ class Interface
         end
     end
 
+    ############################
+    #
+    #
+    # STORY MODE HERE
+    #
+    #
+    ############################
+
     def run_story
+        #binding.pry
         #keep fighting bosses and advancing story until you defeat the final boss OR die
         while self.bosses_defeated <= 4 && self.lose == false
             if self.bosses_defeated == 0
@@ -106,7 +115,7 @@ class Interface
             ALBATROSS AJ: Do you still think the code you write has the power to help anyone?
             ALBATROSS AJ: Guess you'll have the learn the hard way, and die prying..."
             gets
-        elsif
+        elsif self.bosses_defeated == 3
             puts "\n
             You finally make it to the old 'hub' where you it all started so many years ago.
             As you arrive to the top floor, #{player.name}, a feeling overtakes you ...
@@ -129,15 +138,17 @@ class Interface
             If you choose to play in the future with the same name, your character will now have a new Flatiron Fencing attack!
             "
             gets
+            exit!
         end
     end
 
     ############################
     #
-    #BATTLE STUFF STARTS HERE
+    #
+    # BATTLE STUFF STARTS HERE
     #
     #
-    #NEED: turn counter, 
+    ############################
 
     def choose_attack
         #binding.pry
@@ -155,6 +166,7 @@ class Interface
     end
 
     def enter_battle
+        #binding.pry
         bosses_in_order = ["Alice in Wonderland", "Airtight Aaron", "Albatross AJ", "Killer Kyle"]
         #reset health after each battle
         player.hp = 60
@@ -171,6 +183,8 @@ class Interface
             else
                 lose_message
             end
+        #binding.pry
+
     end
 
     def win_message
@@ -193,7 +207,7 @@ class Interface
         puts "
         **************
 
-        | ” ☯ ︿ ☯ ” |
+        ( ✖ _ ✖ )
         
         #{self.player.name} has been DEFEATED!
         YOU LOSE!
@@ -349,9 +363,11 @@ class Interface
 
     ############################
     #
-    #RUN THE GAME
+    #
+    # RUN THE GAME
     #
     #
+    ############################
 
     def run_game
         puts "
