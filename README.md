@@ -23,6 +23,11 @@ This project was required to have...
 2. The Ruby version used in development was `ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]`
 3. Clone this repository to your machine, and run "run.rb" in the repo's root directory
 
+## Contibutor's Guide
+If you would like to (easily) add features to the game, consult the following recommendations,
+- Add enemy fighters and moves: lib/seeds.rb --- To make this enemies part of story mode, replace the fighter.name within the bosses_in_order (if you want to replace the first boss, overwrite them over index[0], for the second boss replace index[1], etc) --- Update the story_text method with custom story text as needed
+- Increase game length, add more overall bosess total: add additional elsif evaluations within the Interface class' run_story and story_text as needed
+
 ## Videos
 1. Introduction
 ![](project1_intro.gif)

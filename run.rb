@@ -1,5 +1,5 @@
 require_relative "config/environment"
-
+binding.pry
 #initialize default player information
 default_move1 = Move.find_by(name: "Binding-Dot-Pry Punch")
 default_move2 = Move.find_by(name: "Laptop Smash")
