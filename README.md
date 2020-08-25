@@ -5,6 +5,9 @@ The setting for the game is in a post-indsturial wasteland, set in Colorado, 204
 There game has short story segements, with 4 bosses total.
 Each boss (lovingly) represents a student or instructor from Flatiron School.
 
+![](project1_battle.gif)
+*the battle system*
+
 ## User Stories
 As a user, one should be able to enjoy the game and...
 - Create a fighter character
@@ -28,8 +31,7 @@ If you would like to (easily) add features to the game, consult the following re
 - Add enemy fighters and moves: lib/seeds.rb --- To make this enemies part of story mode, replace the fighter.name within the bosses_in_order (if you want to replace the first boss, overwrite them over index[0], for the second boss replace index[1], etc) --- Update the story_text method with custom story text as needed
 - Increase game length, add more overall bosess total: add additional elsif evaluations within the Interface class' run_story and story_text as needed
 
-## Videos
-1. Introduction
+## Additional Gifs
+
 ![](project1_intro.gif)
-2. Battle system
-![](project1_battle.gif)
+*introduction*
